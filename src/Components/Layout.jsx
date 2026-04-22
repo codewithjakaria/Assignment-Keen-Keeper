@@ -31,6 +31,7 @@ export default function Layout({ children, setSelectedFriend }) {
           <div className="hidden md:flex items-center gap-4">
             <NavLink
               to="/"
+              end
               className={({ isActive }) =>
                 `flex items-center gap-2 text-sm font-medium px-5 py-2 rounded-full ${isActive ? 'bg-[#244D3F] text-white' : 'text-[#64748B]'}`
               }
@@ -68,6 +69,7 @@ export default function Layout({ children, setSelectedFriend }) {
             <div className="flex flex-col gap-3">
               <NavLink
                 to="/"
+                end
                 onClick={() => setIsMenuOpen(false)}
                 className="flex items-center gap-3 text-base font-bold p-4 rounded-2xl bg-gray-50 text-[#64748B]"
               >
